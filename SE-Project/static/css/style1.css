@@ -1,0 +1,108 @@
+/* frontend/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('/static/img/image2.jpg');
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    height: 100vh; /* Use the full height of the viewport */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px); /* Adjusted width to account for padding and borders */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Added margin-bottom */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#error {
+    color: red;
+    text-align: center;
+}
+/* frontend/style.css */
+
+/* Header styles */
+header {
+    background-color: #333; /* Background color for the header */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center-align the content */
+    width: 100%; /* Full width */
+    position: fixed; /* Fixed position */
+    top: 0; /* Positioned at the top */
+    z-index: 1000; /* Ensure header appears above other content */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin for h1 */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between list items */
+}
+
+nav ul li a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Change link text color on hover */
+}
+
+.container {
+    margin-top: 80px; /* Adjust container margin to prevent content from being hidden under the header */
+}
